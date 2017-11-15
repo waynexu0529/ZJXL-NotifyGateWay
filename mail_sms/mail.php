@@ -7,7 +7,7 @@ $bcc='noc@ctfo.com';
 $smtp='mail.sinoiov.com';
 //$smtp='smtp.ctfo.com';
 $user='notify_sinoiov';
-$pass='zjxl.com#20141119';
+$pass='$password';
 $Logfile='./logs/notify_mail_sinoiov.log';
 
 require_once('../mail_sms_inc/mail_db_conn.php');
@@ -129,7 +129,7 @@ $mail->CharSet    = "UTF-8";               // set the CharSet
 $mail->Host       = "mail.sinoiov.com"; 	// sets the SMTP server
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
 $mail->Username   = "zjxl_ops@sinoiov.com"; 	// SMTP account username
-$mail->Password   = "zjxl.com#20141119";        // SMTP account password
+$mail->Password   = $pass;        // SMTP account password
 $mail->SetFrom($frommail,$user);//$mail->SetFrom('wayne.xu@ctfo.com', 'First Last');
 //$mail->AddReplyTo("name@yourdomain.com","First Last");
 $mail->Subject    = $subject;
